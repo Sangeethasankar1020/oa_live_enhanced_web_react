@@ -11,7 +11,7 @@ export const HeroSection = () => {
         </div>
 
         {/* Title */}
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">
+        <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-4">
           What Our Students <span className="text-[#00AEFF]">Say</span>
         </h2>
         <p className="text-md sm:text-xl text-gray-600 max-w-3xl mx-auto mb-8">
