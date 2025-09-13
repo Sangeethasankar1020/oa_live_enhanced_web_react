@@ -1,11 +1,16 @@
+export interface Instructor {
+  name: string;
+  image: string;
+  expertise: string;
+  experience: string;
+}
+
 export interface WebinarData {
   id: string;
   title: string;
   date: string;
   time: string;
   duration: string;
-  instructor: string;
-  instructorImage: string;
   thumbnail: string;
   description: string;
   tags: string[];
@@ -14,9 +19,11 @@ export interface WebinarData {
   isLive: boolean;
   featured: boolean;
 
-  // ✅ Add new fields
   agenda: string[];
   benefits: string[];
+
+  // ✅ Replace single instructor with multiple instructors
+  instructors: Instructor[];
 }
 
 export interface RegistrationForm {
@@ -33,9 +40,6 @@ export const mockWebinars: WebinarData[] = [
     date: "2025-01-25",
     time: "10:00 AM IST",
     duration: "2 hours",
-    instructor: "Priya Sharma",
-    instructorImage:
-      "https://images.pexels.com/photos/3785079/pexels-photo-3785079.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop",
     thumbnail:
       "https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
     description:
@@ -58,6 +62,22 @@ export const mockWebinars: WebinarData[] = [
       "Get access to exclusive resources and templates",
       "Network with fellow developers and students",
     ],
+    instructors: [
+      {
+        name: "Priya Sharma",
+        image:
+          "https://images.pexels.com/photos/3785079/pexels-photo-3785079.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop",
+        expertise: "AI & Mobile Development",
+        experience: "10+ Years Experience",
+      },
+      {
+        name: "Ravi Menon",
+        image:
+          "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop",
+        expertise: "Cloud & Deployment",
+        experience: "8+ Years Experience",
+      },
+    ],
   },
   {
     id: "2",
@@ -65,9 +85,6 @@ export const mockWebinars: WebinarData[] = [
     date: "2025-01-28",
     time: "2:00 PM IST",
     duration: "1.5 hours",
-    instructor: "Arjun Kumar",
-    instructorImage:
-      "https://images.pexels.com/photos/3785079/pexels-photo-3785079.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop",
     thumbnail:
       "https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
     description:
@@ -90,37 +107,111 @@ export const mockWebinars: WebinarData[] = [
       "Tips to land your first developer job",
       "Learn from industry expert experience",
     ],
+    instructors: [
+      {
+        name: "Arjun Kumar",
+        image:
+          "https://images.pexels.com/photos/3785079/pexels-photo-3785079.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop",
+        expertise: "Full Stack Development",
+        experience: "12+ Years Experience",
+      },
+      {
+        name: "Meera Joshi",
+        image:
+          "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop",
+        expertise: "Frontend Frameworks",
+        experience: "7+ Years Experience",
+      },
+    ],
   },
   {
     id: "3",
-    title: "Data Science Career Blueprint: Way to Success",
-    date: "2025-02-01",
-    time: "11:00 AM IST",
-    duration: "2.5 hours",
-    instructor: "Dr. Sneha Reddy",
-    instructorImage:
-      "https://images.pexels.com/photos/3785079/pexels-photo-3785079.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop",
+    title: "Full Stack Development Roadmap 2025",
+    date: "2025-01-28",
+    time: "2:00 PM IST",
+    duration: "1.5 hours",
     thumbnail:
       "https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
     description:
-      "From beginner to data scientist - learn the complete journey and skills required.",
-    tags: ["Data Science", "Analytics", "Career Switch"],
-    registeredCount: 675,
-    maxCapacity: 1200,
+      "Complete roadmap to become a full stack developer in 2025 with industry insights.",
+    tags: ["Full Stack", "Web Development", "Career"],
+    registeredCount: 892,
+    maxCapacity: 1500,
     isLive: false,
     featured: false,
     agenda: [
-      "What is Data Science?",
-      "Core tools: Python, Pandas, SQL",
-      "Machine Learning basics",
-      "Real-world project walkthrough",
-      "Building your portfolio",
+      "Understanding frontend vs backend",
+      "Essential tools & frameworks",
+      "APIs & database integration",
+      "Deploying full-stack apps",
+      "Future trends in web development",
     ],
     benefits: [
-      "Step-by-step career roadmap",
-      "Hands-on exercises with datasets",
-      "Understand ML concepts easily",
-      "Learn how to present projects in interviews",
+      "Clear roadmap to follow in 2025",
+      "Hands-on examples with latest tools",
+      "Tips to land your first developer job",
+      "Learn from industry expert experience",
+    ],
+    instructors: [
+      {
+        name: "Arjun Kumar",
+        image:
+          "https://images.pexels.com/photos/3785079/pexels-photo-3785079.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop",
+        expertise: "Full Stack Development",
+        experience: "12+ Years Experience",
+      },
+      {
+        name: "Meera Joshi",
+        image:
+          "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop",
+        expertise: "Frontend Frameworks",
+        experience: "7+ Years Experience",
+      },
+    ],
+  },
+  {
+    id: "4",
+    title: "Full Stack Development Roadmap 2025",
+    date: "2025-01-28",
+    time: "2:00 PM IST",
+    duration: "1.5 hours",
+    thumbnail:
+      "https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+    description:
+      "Complete roadmap to become a full stack developer in 2025 with industry insights.",
+    tags: ["Full Stack", "Web Development", "Career"],
+    registeredCount: 892,
+    maxCapacity: 1500,
+    isLive: false,
+    featured: false,
+    agenda: [
+      "Understanding frontend vs backend",
+      "Essential tools & frameworks",
+      "APIs & database integration",
+      "Deploying full-stack apps",
+      "Future trends in web development",
+    ],
+    benefits: [
+      "Clear roadmap to follow in 2025",
+      "Hands-on examples with latest tools",
+      "Tips to land your first developer job",
+      "Learn from industry expert experience",
+    ],
+    instructors: [
+      {
+        name: "Arjun Kumar",
+        image:
+          "https://images.pexels.com/photos/3785079/pexels-photo-3785079.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop",
+        expertise: "Full Stack Development",
+        experience: "12+ Years Experience",
+      },
+      {
+        name: "Meera Joshi",
+        image:
+          "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop",
+        expertise: "Frontend Frameworks",
+        experience: "7+ Years Experience",
+      },
     ],
   },
 ];

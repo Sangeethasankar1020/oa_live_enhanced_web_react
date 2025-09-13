@@ -41,7 +41,7 @@ export const AdSection: React.FC<AdSectionProps> = ({ data, webinarId }) => {
 
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 w-full sm:w-auto px-2">
             <button
-              // onClick={handlePrimaryClick}
+              onClick={handlePrimaryClick}
               className="group w-full sm:w-auto bg-gradient-to-r from-[#FBFF86] to-[#F8FF34] text-[#034E72] px-6 sm:px-8 py-3 sm:py-4 rounded-xl font-semibold flex items-center justify-center space-x-2"
             >
               <Play className="w-5 h-5" />

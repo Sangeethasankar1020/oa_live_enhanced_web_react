@@ -81,7 +81,7 @@ const WebinarCard: React.FC<WebinarCardProps> = ({ webinar, featured }) => {
         </div>
 
         {/* Instructor Info */}
-        <div className="flex items-center space-x-3 my-4">
+        {/* <div className=" flex items-center space-x-3 my-4">
           <img
             src={webinar.instructorImage}
             alt={webinar.instructor}
@@ -91,6 +91,37 @@ const WebinarCard: React.FC<WebinarCardProps> = ({ webinar, featured }) => {
             <p className="font-semibold text-[#034E72] text-sm">
               {webinar.instructor}
             </p>
+          </div>
+        </div> */}
+        {/* Instructor Info */}
+        <div className="flex items-center space-x-3 my-4">
+          {/* Avatars */}
+          <div className="flex -space-x-3">
+            {webinar.instructors.slice(0, 2).map((inst, index) => (
+              <img
+                key={index}
+                src={inst.image}
+                alt={inst.name}
+                className="w-10 h-10 rounded-full object-cover border-2 border-white shadow"
+              />
+            ))}
+            {webinar.instructors.length > 2 && (
+              <div className="w-10 h-10 rounded-full bg-gray-200 border-2 border-white flex items-center justify-center text-xs font-medium text-gray-600 shadow">
+                +{webinar.instructors.length - 2}
+              </div>
+            )}
+          </div>
+
+          {/* Names */}
+          <div>
+            <p className="font-semibold text-[#034E72] text-sm">
+              {webinar.instructors
+                .slice(0, 2)
+                .map((inst) => inst.name)
+                .join(", ")}
+              {webinar.instructors.length > 2 && " + more"}
+            </p>
+            <p className="text-xs text-gray-500">Instructors</p>
           </div>
         </div>
 
@@ -107,7 +138,7 @@ const WebinarCard: React.FC<WebinarCardProps> = ({ webinar, featured }) => {
 
         {/* CTA */}
         <Link
-          // to={`/webinar/${webinar.id}`}
+          to={`/webinar/${webinar.id}`}
           className="w-full bg-gradient-to-r from-[#034E72] to-[#00AEFF] text-white py-3 rounded-xl font-semibold flex items-center justify-center space-x-2 hover:from-[#2E81A9] hover:to-[#00AEFF] transition-all duration-300 group"
         >
           <span>Join Free Webinar</span>

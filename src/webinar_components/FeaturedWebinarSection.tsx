@@ -55,14 +55,14 @@ export const FeaturedWebinarSection: React.FC<FeaturedWebinarProps> = ({
 
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
                 <button
-                  // onClick={() => onRegister(webinar.id)}
+                  onClick={() => onRegister(webinar.id)}
                   className="w-full sm:w-auto bg-gradient-to-r from-[#034E72] to-[#00AEFF] text-white px-6 sm:px-8 py-3 rounded-xl font-semibold"
                 >
                   Register Now <ArrowRight className="inline w-5 h-5 ml-2" />
                 </button>
 
                 <button
-                  // onClick={() => onRegister(webinar.id)}
+                  onClick={() => onRegister(webinar.id)}
                   className="w-full sm:w-auto bg-white text-[#00AEFF] border border-blue-300 px-6 sm:px-8 py-3 rounded-xl font-semibold"
                 >
                   View Details
