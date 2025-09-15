@@ -8,13 +8,17 @@ import { AlbumGallery, SpecificAlbum } from "./Photos";
 import { WebinarLandingPage } from "./page/WebinarLandingPage";
 import { AllWebinarsPage } from "./page/AllWebinarPage";
 import SingleWebinar from "./page/SingleWebinar";
+import { CourseList } from "./page/CourseList";
+import { CourseDetailPage } from "./page/CourseDetailPage";
 
 function App() {
   return (
     <div>
       {/* Routes */}
       <Routes>
-        <Route path="/" element={<WebinarLandingPage />} />
+        <Route path="/" element={<CourseList />} />
+        <Route path="/course/:id" element={<CourseDetailPage />} />
+        <Route path="/webinar" element={<WebinarLandingPage />} />
         <Route path="/allwebinars" element={<AllWebinarsPage />} />
         <Route path="/webinar/:id" element={<SingleWebinar />} />
         <Route path="/gallery" element={<AlbumGallery />} />
