@@ -26,7 +26,7 @@ export const CourseDetail: React.FC<CourseDetailProps> = ({ course }) => {
     <>
       {/* Course Header */}
       <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
-        <div className="relative h-48 sm:h-64 md:h-80">
+        <div className="relative w-[520px] sm:w-full h-36 sm:h-48 sm:aspect-[49/13] bg-red-300">
           <img
             src={course.bannerImage}
             alt={course.title}
@@ -79,7 +79,7 @@ export const CourseDetail: React.FC<CourseDetailProps> = ({ course }) => {
           </div>
 
           {/* Icons Section */}
-          <div className="grid grid-cols-3 gap-0 sm:gap-6 mt-8 text-center">
+          <div className="grid grid-cols-3 gap-0 sm:gap-6 mt-2 sm:mt-8 text-center">
             <div className="flex flex-col items-center">
               <Users className="text-[#00AEFF] mb-1" />
               <span className="text-gray-900 font-medium text-[12px] sm:text-base">
@@ -113,7 +113,7 @@ export const CourseDetail: React.FC<CourseDetailProps> = ({ course }) => {
 
       {/* Curriculum */}
       <section className="mt-10">
-        <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">
+        <h2 className="text-2xl sm:text-3xl font-bold text-[#034E72] mb-6">
           Course Curriculum
         </h2>
         <div className="space-y-6">
@@ -188,7 +188,7 @@ export const CourseDetail: React.FC<CourseDetailProps> = ({ course }) => {
       {/* Prerequisites */}
       {course.prerequisites?.length > 0 && (
         <section className="mt-10">
-          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">
+          <h2 className="text-2xl sm:text-3xl font-bold text-[#034E72] mb-6">
             Prerequisites
           </h2>
           <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-4 sm:p-6">

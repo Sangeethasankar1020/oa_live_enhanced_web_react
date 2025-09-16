@@ -1,0 +1,10 @@
+export { default as REACT } from "./react 1.svg";
+export { default as NODE } from "./node 1.svg";
+export { default as MONGODB } from "./mongodb 1.svg";
+export { default as EXPRESS } from "./expre 1.svg";
+export { default as GITHUB } from "./git 1.svg";
+export { default as GIT } from "./gits 1.svg";
+export { default as VSCODE } from "./vs 1.svg";
+export { default as OPENAI } from "./ai 1.svg";
+export { default as PERPLEX } from "./image 92.svg";
+export { default as BOLT } from "./image 93.svg";

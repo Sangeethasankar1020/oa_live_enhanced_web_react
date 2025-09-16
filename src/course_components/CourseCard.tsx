@@ -95,7 +95,7 @@ export const CourseCard: React.FC<CourseCardProps> = ({
 
         {/* Button */}
         <button
-          // onClick={handleViewDetails}
+          onClick={handleViewDetails}
           className="w-full bg-[#00AEFF] text-white py-3 px-4 rounded-lg font-medium hover:bg-[#034E72] transition-colors group-hover:shadow-lg group-hover:shadow-blue-500/25"
         >
           View Details

@@ -1,17 +1,17 @@
 import React from "react";
 import { Star, Quote } from "lucide-react";
 
-interface ReviewCardProps {
+export interface ReviewCardProps {
   name: string;
   role: string;
   company: string;
   rating: number;
   review: string;
   avatar: string;
-  date: string;
+  date?: string;
 }
 
-const ReviewCard: React.FC<ReviewCardProps> = ({
+export const ReviewCard: React.FC<ReviewCardProps> = ({
   name,
   role,
   company,
