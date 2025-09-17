@@ -29,7 +29,7 @@ export const CourseCard: React.FC<CourseCardProps> = ({
           alt={course.title}
           loading="lazy"
           className="w-full h-full object-contain rounded-t-2xl "
-          draggable={false}
+          // draggable={false}
         />
       </div>
 
