@@ -42,8 +42,12 @@ export const CourseDetailPage = () => {
       {/* Tools Sections */}
       <GeneralTools />
       <AiTools />
-      <div className=""><ReviewSection /></div>
-      <div className="mt-8"><DetailedCourseCta /></div>
+      <div className="">
+        <ReviewSection />
+      </div>
+      <div className="mt-8">
+        <DetailedCourseCta />
+      </div>
     </div>
   );
 };
