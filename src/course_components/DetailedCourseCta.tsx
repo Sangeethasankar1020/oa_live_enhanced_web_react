@@ -8,7 +8,7 @@ export const DetailedCourseCta = () => {
           Transform Your <span className="text-[#00AEFF]">Future</span> with
           Programming Skills
         </h2>
-        <p className="text-md sm:text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+        <p className="text-md sm:text-xl text-gray-600 mb-8 max-w-2xl font-medium mx-auto">
           Join thousands of learners who have transformed their careers through
           our comprehensive programming education.
         </p>
