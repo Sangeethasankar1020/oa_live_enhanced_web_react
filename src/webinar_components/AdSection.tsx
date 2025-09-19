@@ -17,7 +17,6 @@ export const AdSection: React.FC<AdSectionProps> = ({ data, webinarId }) => {
   const handleSecondaryClick = () => {
     navigate("/allwebinars");
   };
-
   return (
     <section className="relative overflow-hidden bg-gradient-to-r from-[#034E72] to-[#00AEFF] text-white">
       <div className="absolute inset-0 bg-black/20"></div>

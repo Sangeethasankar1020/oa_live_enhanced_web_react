@@ -34,6 +34,7 @@ export interface Course {
   students: number;
   syllabusLink: string;
   technologies: string[];
+  tags: string[];
   whatYouWillLearn: string[];
   modules: Module[];
   prerequisites: string[];
@@ -47,7 +48,7 @@ export const coursesdata: Course[] = [
     courseIndex: 1,
     courseId: "ocnmern",
     category: "frontend",
-    title: "JavaScript Mastery Bootcamp",
+    title: "JavaScript Mastery ",
     description:
       "Learn modern JavaScript from scratch with real-world projects.Learn modern JavaScript from scratch with real-world projects.Learn modern JavaScript from scratch with real-world projects.Learn modern JavaScript from scratch with real-world projects.",
     bannerImage: BANNER,
@@ -58,6 +59,7 @@ export const coursesdata: Course[] = [
     duration: "4 - 5",
     totalHours: 40,
     students: 1250,
+    tags: ["Node.js", "React", "MongoDB"],
     syllabusLink: "firebase_url/js_syllabus.pdf",
     technologies: ["JavaScript", "Node.js", "React.js", "MongoDB"],
     whatYouWillLearn: [
@@ -114,6 +116,7 @@ export const coursesdata: Course[] = [
     price: 5999,
     discountPercentage: 25,
     originalPrice: 7999,
+    tags: ["Node.js", "React", "MongoDB"],
     duration: "10",
     totalHours: 50,
     students: 2100,
@@ -170,6 +173,7 @@ export const coursesdata: Course[] = [
     originalPrice: 6470,
     duration: "7",
     totalHours: 35,
+    tags: ["Node.js", "React", "MongoDB"],
     students: 1800,
     syllabusLink: "firebase_url/node_syllabus.pdf",
     technologies: ["Node.js", "Express.js", "MongoDB", "JWT"],
@@ -221,6 +225,7 @@ export const coursesdata: Course[] = [
     cardImage: COURSEIMAGE,
     price: 7999,
     discountPercentage: 30,
+    tags: ["Node.js", "React", "MongoDB"],
     originalPrice: 11428,
     duration: "12 ",
     totalHours: 60,
@@ -265,6 +270,7 @@ export const coursesdata: Course[] = [
     cardImage: COURSEIMAGE,
     price: 3999,
     discountPercentage: 10,
+    tags: ["Node.js", "React", "MongoDB"],
     originalPrice: 4444,
     duration: "6 weeks",
     totalHours: 30,
@@ -310,6 +316,7 @@ export const coursesdata: Course[] = [
     price: 6499,
     discountPercentage: 20,
     originalPrice: 8124,
+    tags: ["Node.js", "React", "MongoDB"],
     duration: "9 weeks",
     totalHours: 45,
     students: 2700,
@@ -355,6 +362,7 @@ export const coursesdata: Course[] = [
       "Dive into Machine Learning and AI with Python and TensorFlow.",
     bannerImage: BANNER,
     cardImage: COURSEIMAGE,
+    tags: ["Node.js", "React", "MongoDB"],
     price: 8999,
     discountPercentage: 35,
     originalPrice: 13845,
