@@ -90,53 +90,6 @@ export const CourseDetail: React.FC<CourseDetailProps> = ({ course }) => {
                 <FaAward className="w-10 h-10 sm:w-14 sm:h-14 lg:w-16 lg:h-16 text-[#FACC15]" />
               </div>
             </div>
-
-            <div className="p-4 sm:p-6 lg:p-8">
-              <p className="text-gray-600 text-sm sm:text-base leading-relaxed mb-4 sm:mb-6">
-                {course.description}
-              </p>
-
-              {/* Technologies You'll Learn */}
-              <div className="mb-6 sm:mb-8">
-                <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-3 sm:mb-4">
-                  Technologies You'll Learn
-                </h3>
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-2 sm:gap-3">
-                  {course.tags.map((tech, index) => (
-                    <div
-                      key={index}
-                      className="bg-[#00AEFF] bg-opacity-10 border border-[#00AEFF] border-opacity-20 rounded-lg p-2 sm:p-3 text-center"
-                    >
-                      <span className="text-[#00AEFF] font-medium text-xs sm:text-sm">
-                        {tech}
-                      </span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              {/* Course Duration Info */}
-              <div className="bg-gray-50 rounded-xl p-4 sm:p-6">
-                <div className="grid grid-cols-2 gap-4 sm:gap-6">
-                  <div>
-                    <h4 className="text-xs sm:text-sm font-semibold text-gray-600 mb-1 sm:mb-2">
-                      Course Duration
-                    </h4>
-                    <p className="text-sm sm:text-lg font-bold text-gray-900">
-                      5-6 Months
-                    </p>
-                  </div>
-                  <div>
-                    <h4 className="text-xs sm:text-sm font-semibold text-gray-600 mb-1 sm:mb-2">
-                      Total Hours
-                    </h4>
-                    <p className="text-sm sm:text-lg font-bold text-gray-900">
-                      180 Hours
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
 
